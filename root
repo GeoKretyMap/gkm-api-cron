@@ -15,3 +15,9 @@ PATH=/usr/lib/sysstat:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
 46-49 * * * * gkm-update
 51-54 * * * * gkm-update
 56-59 * * * * gkm-update
+
+# Drop old backups
+*/12 * * * * * curl -s https://api.gkm.kumy.org/backup
+
+# Drop old backups
+23  4 * * * * find /srv/BaseXData/ -maxdepth 1 -name "geokrety-*.zip" -mtime +7 -exec rm {} \;

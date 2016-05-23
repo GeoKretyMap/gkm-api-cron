@@ -1,0 +1,8 @@
+#!/bin/sh
+
+curl -s https://api.gkm.kumy.org/fetch/details
+curl -s https://api.gkm.kumy.org/merge
+curl -s https://api.gkm.kumy.org/merge/details
+curl -s https://api.gkm.kumy.org/pending
+curl -s https://api.gkm.kumy.org/pending/details
+curl -s https://api.gkm.kumy.org/pending/errors

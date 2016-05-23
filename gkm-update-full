@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+curl -s https://api.gkm.kumy.org/fetch
+gkm-update

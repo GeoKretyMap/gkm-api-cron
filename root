@@ -1,0 +1,17 @@
+PATH=/usr/lib/sysstat:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Take updates
+*/5 * * * * gkm-update-full
+
+ 1-4  * * * * gkm-update
+ 6-9  * * * * gkm-update
+11-14 * * * * gkm-update
+16-19 * * * * gkm-update
+21-24 * * * * gkm-update
+26-29 * * * * gkm-update
+31-34 * * * * gkm-update
+36-39 * * * * gkm-update
+41-44 * * * * gkm-update
+46-49 * * * * gkm-update
+51-54 * * * * gkm-update
+56-59 * * * * gkm-update

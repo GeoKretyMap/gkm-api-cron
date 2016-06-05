@@ -2,12 +2,14 @@ FROM alpine:3.3
 
 RUN apk add --no-cache curl
 
-COPY gkm-update /usr/local/bin/gkm-update
-COPY gkm-update-full /usr/local/bin/gkm-update-full
+COPY gkm-backup /usr/local/bin/
+COPY gkm-export /usr/local/bin/
+COPY gkm-update /usr/local/bin/
+COPY gkm-update-full /usr/local/bin/
 
 COPY root /var/spool/cron/crontabs/root
 
-RUN chmod +x /usr/local/bin/gkm-update /usr/local/bin/gkm-update-full
+RUN chmod +x /usr/local/bin/gkm-*
 
 CMD crond -l 2 -f
 

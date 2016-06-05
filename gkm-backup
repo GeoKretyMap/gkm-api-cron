@@ -1,0 +1,4 @@
+#!/bin/sh
+
+curl -s https://api.gkm.kumy.org/backup
+curl -s https://api.gkm.kumy.org/backup/details

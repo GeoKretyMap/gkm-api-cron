@@ -1,0 +1,6 @@
+#!/bin/sh
+
+curl -s https://api.gkm.kumy.org/export
+curl -s https://api.gkm.kumy.org/export/details
+curl -s https://api.gkm.kumy.org/export/geojson
+

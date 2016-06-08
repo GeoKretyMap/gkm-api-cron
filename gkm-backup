@@ -2,3 +2,6 @@
 
 curl -s https://api.gkm.kumy.org/backup
 curl -s https://api.gkm.kumy.org/backup/details
+
+curl -s https://api.gkm.kumy.org/optimize
+curl -s https://api.gkm.kumy.org/optimize/details

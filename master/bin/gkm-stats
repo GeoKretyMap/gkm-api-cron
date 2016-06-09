@@ -1,5 +1,7 @@
 #!/bin/sh
 
-curl -s https://api.gkm.kumy.org/pending
-curl -s https://api.gkm.kumy.org/pending/details
-curl -s https://api.gkm.kumy.org/pending/errors
+GKM_API=${GKM_API:-https://api.geokrety.org}
+
+curl -s ${GKM_API}/pending
+curl -s ${GKM_API}/pending/details
+curl -s ${GKM_API}/pending/errors

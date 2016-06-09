@@ -1,3 +1,5 @@
 #!/bin/sh
 
-curl -s https://api.gkm.kumy.org/fetch
+GKM_API=${GKM_API:-https://api.geokrety.org}
+
+curl -s ${GKM_API}/fetch

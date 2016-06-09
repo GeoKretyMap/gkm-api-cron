@@ -1,4 +1,6 @@
 #!/bin/sh
 
-curl -s https://api.gkm.kumy.org/merge/details
-curl -s https://api.gkm.kumy.org/merge
+GKM_API=${GKM_API:-https://api.geokrety.org}
+
+curl -s ${GKM_API}/merge/details
+curl -s ${GKM_API}/merge

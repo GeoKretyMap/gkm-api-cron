@@ -1,0 +1,4 @@
+#!/bin/sh
+
+curl -s https://api.gkm.kumy.org/merge/details
+curl -s https://api.gkm.kumy.org/merge

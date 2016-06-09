@@ -1,21 +1,21 @@
 PATH=/usr/lib/sysstat:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Fetch basic and export
-*/5 * * * * gkm-fetch && gkm-fetch-detail && gkm-merge && gkm-export && gkm-stats
+*/5 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-export && gkm-stats
 
 # Fetch details
- 1-4  * * * * gkm-fetch-detail && gkm-merge && gkm-stats
- 6-9  * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-11-14 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-16-19 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-21-24 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-26-29 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-31-34 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-36-39 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-41-44 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-46-49 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-51-54 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
-56-59 * * * * gkm-fetch-detail && gkm-merge && gkm-stats
+ 1-4  * * * * gkm-fetch-details && gkm-merge && gkm-stats
+ 6-9  * * * * gkm-fetch-details && gkm-merge && gkm-stats
+11-14 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+16-19 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+21-24 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+26-29 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+31-34 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+36-39 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+41-44 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+46-49 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+51-54 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+56-59 * * * * gkm-fetch-details && gkm-merge && gkm-stats
 
 # Backup
 4 */12 * * * gkm-backup

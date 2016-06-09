@@ -1,4 +1,4 @@
-FROM GeoKretyMap/gkm-api-cron:master
+FROM geokretymap/gkm-api-cron:master
 
 # install cron for slave
 COPY root /var/spool/cron/crontabs/root

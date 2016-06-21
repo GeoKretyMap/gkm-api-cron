@@ -1,5 +1,5 @@
 #!/bin/sh
 
-GKM_API_URL=${GKM_API_URL:-https://api.geokrety.org}
+GKM_API_URL=${GKM_API_URL:-https://api.geokretymap.org}
 
 curl -s ${GKM_API_URL}/fetch/master

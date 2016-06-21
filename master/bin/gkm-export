@@ -1,7 +1,7 @@
 #!/bin/sh
 
-GKM_API=${GKM_API:-https://api.geokrety.org}
+GKM_API_URL=${GKM_API_URL:-https://api.geokrety.org}
 
-curl -s ${GKM_API}/export
-curl -s ${GKM_API}/export/details
+curl -s ${GKM_API_URL}/export
+curl -s ${GKM_API_URL}/export/details
 

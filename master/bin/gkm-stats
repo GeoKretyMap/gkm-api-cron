@@ -2,6 +2,4 @@
 
 GKM_API=${GKM_API:-https://api.geokrety.org}
 
-curl -s ${GKM_API}/pending
-curl -s ${GKM_API}/pending/details
-curl -s ${GKM_API}/pending/errors
+curl -s ${GKM_API}/stats

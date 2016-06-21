@@ -4,5 +4,4 @@ GKM_API=${GKM_API:-https://api.geokrety.org}
 
 curl -s ${GKM_API}/export
 curl -s ${GKM_API}/export/details
-curl -s ${GKM_API}/export/geojson
 

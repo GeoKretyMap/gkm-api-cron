@@ -1,7 +1,7 @@
 PATH=/usr/lib/sysstat:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Fetch basic and export
-*/5 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-export && gkm-stats
+*/5 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-export && gkm-stats && gkm-rrdgraph
 
 # Fetch details
  1-4  * * * * gkm-fetch-details && gkm-merge && gkm-stats

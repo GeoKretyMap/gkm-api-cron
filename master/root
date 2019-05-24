@@ -1,21 +1,21 @@
 PATH=/usr/lib/sysstat:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Fetch basic and export
-*/5 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-export && gkm-stats && gkm-rrdgraph
+*/5 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph && gkm-export
 
 # Fetch details
- 1-4  * * * * gkm-fetch-details && gkm-merge && gkm-stats
- 6-9  * * * * gkm-fetch-details && gkm-merge && gkm-stats
-11-14 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-16-19 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-21-24 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-26-29 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-31-34 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-36-39 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-41-44 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-46-49 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-51-54 * * * * gkm-fetch-details && gkm-merge && gkm-stats
-56-59 * * * * gkm-fetch-details && gkm-merge && gkm-stats
+ 1-4  * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+ 6-9  * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+11-14 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+16-19 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+21-24 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+26-29 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+31-34 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+36-39 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+41-44 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+46-49 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+51-54 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
+56-59 * * * * gkm-fetch && gkm-fetch-details && gkm-merge && gkm-stats && gkm-rrdgraph
 
 # Backup
 4 */12 * * * gkm-backup

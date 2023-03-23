@@ -21,4 +21,4 @@ PATH=/usr/lib/sysstat:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
 4 */12 * * * gkm-backup
 
 # Drop old backups
-23  4 * * * find /srv/BaseXData/ -maxdepth 1 -name "geokrety-*.zip" -mtime +7 -exec rm {} \;
+23  4 * * * find /srv/BaseXData/ -maxdepth 1 -name "geokrety*.zip" -mtime +7 -exec rm {} \;
